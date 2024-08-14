@@ -1,0 +1,418 @@
+body {
+  text-align: left;
+  background: #fff;
+  background-size: auto;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+:root{
+  --color-primary: #EE2F5B;
+  --color-secondary: #F4F4F4;
+  --color-text: #F4F4F4;
+  --color-7e4e46cc: #7A7A7A;
+  --color-1d522ab5: #4054B2;
+  --color-6f66f7cf: #23A455;
+  --color-172f6628: #000;
+  --color-60fea42d: #FFF;
+  --font-family: "Criteria";
+  --font-size: 5rem;
+  --font-weight: 600;
+  --line-height: 1.2em;
+  --secondary-font-size: 4.3rem;
+  --secondary-font-weight: 600;
+  --secondary-line-height: 1.2em;
+  --text-font-family: "Agrandir";
+  --text-font-size: 1rem;
+  --text-font-weight: 400;
+  --text-line-height: 1.5em;
+}
+.containers{
+  width: 83%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ol, ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#nav{
+  height: fit-content;
+  padding-bottom: 150px;
+  background-image:linear-gradient(rgba(28, 28, 179, 0.5), rgba(14, 5, 57, 0.5)),url(/images/1.webp);
+  animation-name: background-img;
+  animation-duration: 10s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding-top: 50px;
+}
+@keyframes background-img{
+    0%{
+        background-image:linear-gradient(rgba(28, 28, 179, 0.5), rgba(14, 5, 57, 0.5)), url(/images/2.webp); 
+    }
+    25%{
+        background-image: linear-gradient(rgba(28, 28, 179, 0.5), rgba(14, 5, 57, 0.5)), url(/images/3.webp);  
+    }
+    50%{
+        background-image:linear-gradient(rgba(28, 28, 179, 0.5), rgba(14, 5, 57, 0.5)), url(/images/6.webp);
+    }
+    75%{
+        background-image: linear-gradient(rgba(28, 28, 179, 0.5), rgba(14, 5, 57, 0.5)), url(/images/7.webp);
+    }  
+}
+.heloo{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  opacity: 1px;
+}
+.nav-link{
+  font-family: var(--text-font-family);
+  font-weight: var(--text-font-weight);
+  color: var(--color-text);
+}
+.btns{
+  color: white;
+  background: linear-gradient(to right, #FD4E33, #E02870);
+  padding: 18px 45px;
+  margin-left: 50px;
+  border: none
+}
+.btn:hover {
+  background: linear-gradient(to right, #E02870, #FD4E33);
+  color: white;
+}
+ .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+  border: none
+}
+@media(max-width:1201px){ 
+  .btns{
+    padding: 15px 30px;
+    margin-left: 10px;
+  }
+  .navbar-brand{
+    margin-right: 0px
+  }
+ }
+.hero > .anticipate{
+  color: var(--color-text);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px
+}
+.hero h1{
+  color: var(--color-secondary);
+  font-family: "Clash Display", Sans-serif;
+  font-size: 7.2rem;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.hero p{
+  text-align: center;
+  color: var(--color-text);
+  font-family: var(--text-font-family);
+  font-weight: var(--secondary-font-weight);
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+.sponsor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+.sponsor button{
+  color: white;
+  font-family: sans-serif;
+  font-weight: 800;
+  background-color: transparent;
+  padding: 15px 30px;
+  border: 1px solid #08003C;
+  letter-spacing: 2px;
+}
+.sponsor button:hover{
+  color: #08003C;
+}
+.btnsection{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.sponsor_p{
+  color: white;
+  font-family: sans-serif;
+  font-weight: 800;
+  background-color: transparent;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+main{
+  background-color: #08003C;
+  height: fit-content;
+}
+.boex_rows{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+@media(max-width:1108px){
+  .boex_rows{
+    border-bottom: 1px solid #2F285B;
+  }
+ }
+ @media(max-width:1039px){
+  .boex_rows{
+    border-bottom: none
+  }
+  } 
+.boxes{
+  border: 1px solid white;
+  height: 180px;
+  width: 23.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-60fea42d);
+}
+@media(max-width:1024px){
+  .containers{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .boxes{
+    width: 49%;
+    margin-bottom: 20px;
+  }
+ }
+ .boxes h1{
+  font-family: "Clash Display", Sans-serif;
+  color: var(--color-primary);
+  font-size: var(--secondary-font-size);
+  text-align: center;
+ }
+ .boxes p{
+  font-family:"Clash Display", Sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+ }
+ .about_smfest_section{
+  margin-top: 200px
+ }
+ .about_smfest{
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+  font-family: "Clash Display", Sans-serif;
+  padding-bottom:  200px; 
+ }
+ .about{
+  width: 50%;
+  height: fit-content;
+ 
+ }
+ .first{
+  padding-right: 65px;
+ }
+ .about_smfest h6{
+  color: var(--color-primary);
+  letter-spacing: 6px;
+  font-weight: var(--font-weight);
+  font-size: var(--text-font-size);
+  margin-bottom: 20px;
+ }
+ .about_smfest h1{
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 20px;
+ }
+ .about_smfest p{
+  font-weight: var(--font-weight);
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  font-family: var(--text-font-family);
+ line-height: 22px;
+ }
+ .about button{
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 15px 40px;
+  margin-top: 60px;
+ }
+.borders{
+  height: 140vh;
+  position: relative;
+  border: 4px solid #EE2F5B; 
+  border-radius: 10px;
+  height: 110vh;
+}
+.about_bg{
+  background-image: url(/images/about-smfest-2webp.webp);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.Years_Of_Excellence{
+  border: 1px solid white;
+  font-family: Sans-serif;
+  height: 150px;
+  width: 280px;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: -50px;
+}
+.Years_Of_Excellence div{
+  display: flex;
+}
+.Years_Of_Excellence div h5{
+  position: absolute;
+  top: 20px;
+  right: 90px;
+}
+.second_about_bg{
+  background-image: url(/images/DSC_9591-copy.jpg);
+  
+}
+.about_smfest_section_second{
+  margin-top: 150px;
+}
+.second{
+  padding-left: 50px;
+ }
+.Years_Of_Excellence_second{
+  background-color: var(--color-primary);
+  top: -80px;
+  left: -110px;  
+}
+.Years_Of_Excellence_second > div h5{
+ color: white;
+ 
+}
+.second h1{
+  font-size: 3.6rem;
+}
+
+
+
+
+
+
+/* Medium Devices */
+@media(max-width:991px){
+  .containers{
+    width: 85%;
+  }
+  .hero h1{
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1em;
+  }
+  .boxes{
+    height: 140px;
+  }
+  .boxes h1{
+    font-size: 3rem;
+  }
+  .about_smfest_section{
+    margin-top: 150px;
+  }
+  
+  .about{
+    width: 100%;
+  }
+  .about_bg{
+    top: 50px;
+    right: 25px;
+  }
+  .first{
+    order: 2;
+    margin-top: 100px;
+    padding: 0px;
+  }
+  .second{
+    order: 1;
+  }
+
+ }
+/* Small Devices */
+@media(max-width:767px){
+  .hero h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1em;
+  }
+  .sponsor{
+    gap: 20px;
+  }
+  .sponsor_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .btnsection{
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+  .boxes{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .boxes h1{
+    font-size: 2rem;
+  }
+   .about_smfest h1{
+  font-size: 2rem;
+ }
+ .second{
+  margin-top: -100px;
+  border: 1px solid red;
+ }
+ .second h1{
+  letter-spacing: 3px;
+ }
+ }
+ /* Extra Small Devices */
+@media(max-width:575px){
+ #nav{
+  height: fit-content;
+  padding-bottom: 50px;
+ }
+ }
+ 
