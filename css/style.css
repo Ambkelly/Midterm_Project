@@ -88,11 +88,71 @@ ol, ul{
   background: linear-gradient(to right, #E02870, #FD4E33);
   color: white;
 }
+.btns a.text-completed::after,.text-completed::before{
+  content: "SPONSOR";
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  left: 0;
+  width: 100%;
+  line-height:50px;
+  text-transform: capitalize;
+  transition: all 400ms;
+}
+.btns .text-completed::before{
+  content: "REGISTER";
+  left: 190px;
+  background: linear-gradient(to right #df2771,#fb4c37);
+}
+.btns a.text-completed:hover::after{
+  left:-170px;
+  background: linear-gradient(to right #fb4c37, #df2771);
+}
+.btns .text-completed:hover::before{
+  left: 0;
+}
+.btns a{
+  display: flex;
+  overflow: hidden;
+  width: 160px;
+  height: 42px;
+  position: relative;
+}
+.btns{
+  height: 50px;
+  width: 60%;
+  display: flex;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fb4c37;
+}
  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-toggler{
-  border: none
+  border: none;
+  text-shadow: none;
+  outline: none;
+}
+.offcanvas-top{
+  background: linear-gradient(to top, #E02870, #FD4E33);
+  font-family: "Clash Display", Sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  height: fit-content;
+}
+.offcanvas-top li{
+  padding-bottom: 20px;
+}
+.offcanvas-top li:hover{
+  background-color: white;
+  color: var(--color-primary);
 }
 @media(max-width:1201px){ 
   .btns{
@@ -149,6 +209,20 @@ ol, ul{
 }
 .sponsor button:hover{
   color: #08003C;
+}
+.preload-animation{
+  position: relative;
+}
+.img{
+  position: absolute; top: 80px; left: 80px;
+}
+@media(max-width:767px){
+  .btnsection > img{
+    height: 20px;
+  }
+  .img{
+    position: absolute; top: 80px; left: 180px
+  }
 }
 .btnsection{
   display: flex;
@@ -280,6 +354,18 @@ main{
   position: absolute;
   top: 50px;
   right: 50px;
+  min-height: 100%;
+  min-width: 100%;
+}
+@media (max-width: 768px) {
+  .borders {
+    height: 80vh; /* Adjust height for smaller screens if needed */
+  }
+}
+@media (min-width: 769px) {
+  .borders {
+    height: 140vh; /* Default height for larger screens */
+  }
 }
 .Years_Of_Excellence{
   border: 1px solid white;
@@ -300,6 +386,9 @@ main{
 .Years_Of_Excellence div{
   display: flex;
 }
+.Years_Of_Excellence div h1{
+  font-size: 5rem;
+}
 .Years_Of_Excellence div h5{
   position: absolute;
   top: 20px;
@@ -313,21 +402,80 @@ main{
   margin-top: 150px;
 }
 .second{
-  padding-left: 50px;
+  padding-left: 0px;
  }
 .Years_Of_Excellence_second{
   background-color: var(--color-primary);
   top: -80px;
   left: -110px;  
 }
-.Years_Of_Excellence_second > div h5{
+.Years_Of_Excellence > div h5{
  color: white;
  
 }
-.second h1{
+.seconds h1{
   font-size: 3.6rem;
 }
-
+.about_smfest_section_second .second{
+  width: 45%;
+}
+.about_smfest_section_second .seconds{
+  width: 55%;
+}
+.engagement{
+  height: fit-content;
+  display: flex;
+  width: 50%;
+}
+.bi{
+  font-size: 40px;
+  padding-right: 10px;
+}
+.engagement h3{
+  font-family: "Clash Display", Sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+.Exhibit_SMFest h1{
+  color: white;
+  font-family: "Clash Display", Sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1em;
+}
+.Exhibit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.text h3{
+  color: var(--color-primary);
+  letter-spacing: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.text h1{
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.texts{
+  width: 70%;
+}
 
 
 
@@ -368,28 +516,67 @@ main{
   .second{
     order: 1;
   }
-
+  .about_smfest_section_second .second{
+    width: 100%;
+  }
+  .about_smfest_section_second .first{
+    width: 100%;
+  }
+  .Exhibit img{
+    display: none;
+  }
+  .text{
+    width: 100%;
+  }
+  .text h1{
+    font-size: 2.5rem;
+  }
  }
 /* Small Devices */
 @media(max-width:767px){
+  .offcanvas-top li:hover{
+    background-color: white;
+  }
   .hero h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     line-height: 1em;
   }
+  .hero p{
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
   .sponsor{
-    gap: 20px;
+    gap: 0px;
   }
   .sponsor_btn{
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .sponsor_p{
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: -20px;
+  }
+  .sponsor button{
+    padding: 15px 20px;
+  }
+  .preload-animation img{
+    width: 100px;
   }
   .btnsection{
     width: 100%;
     justify-content: center;
     gap: 20px;
+    text-align: center;
   }
+  .img{
+  position: absolute; top: 30px; left: 30px;
+  width: 40px;
+}
   .boxes{
     width: 100%;
     margin-bottom: 20px;
@@ -398,16 +585,39 @@ main{
     font-size: 2rem;
   }
    .about_smfest h1{
-  font-size: 2rem;
+    font-size: 2rem;
  }
  .second{
   margin-top: -100px;
-  border: 1px solid red;
  }
  .second h1{
   letter-spacing: 3px;
  }
- }
+ .Years_Of_Excellence_second{
+  background-color: var(--color-primary);
+  top: -50px;
+  left: -60px; 
+  height: 110px;
+  width: 400px; 
+}
+.Years_Of_Excellence{
+  height: 130px;
+  width: 300px;
+  right: -30px; 
+}
+.Years_Of_Excellence div h1{
+  font-size: 40px;
+}
+.Years_Of_Excellence div h5{
+  position: absolute;
+  top: 20px;
+  right: 112px;
+}
+.engagement{
+  width: 100%;
+  padding-bottom: 20px;
+}
+}
  /* Extra Small Devices */
 @media(max-width:575px){
  #nav{
