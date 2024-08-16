@@ -592,6 +592,25 @@ main{
 .ticket button:hover{
   padding: 15px 40px;
 }
+.third_ticket{
+  position: relative;
+}
+.ticket_best{
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid red;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-family: "clash display";
+  font-weight: 600;
+}
 footer{
   height: fit-content;
   background-image: linear-gradient(180deg, rgba(24, 10, 76, 0.9) 0%, rgb(5, 23, 54) 100%),url(/images/1.webp);
@@ -798,6 +817,10 @@ a .top_icon:hover{
   }
   .sponsor{
     gap: 0px;
+  }
+  .ticket_best{
+    height: 50px;
+    width: 50px;
   }
   .sponsor_btn{
     width: 100%;
