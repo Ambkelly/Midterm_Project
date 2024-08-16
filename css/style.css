@@ -29,7 +29,7 @@ body {
   --text-line-height: 1.5em;
 }
 .containers{
-  width: 83%;
+  width: 88%;
   margin: 0 auto;
 }
 a{
@@ -247,6 +247,7 @@ main{
   justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 50px;
+  border-bottom: 1px solid var(--color-7e4e46cc);
 }
 @media(max-width:1108px){
   .boex_rows{
@@ -302,6 +303,9 @@ main{
   font-family: "Clash Display", Sans-serif;
   padding-bottom:  200px; 
  }
+ hr{
+  display: none;
+ }
  .about{
   width: 50%;
   height: fit-content;
@@ -336,7 +340,43 @@ main{
   font-weight: 500;
   padding: 15px 40px;
   margin-top: 60px;
+ 
  }
+ .about button:hover{
+  background-color: #fb4c37;
+ }
+ .abouts a.read_more::after,.read_more::before{
+  content: "READ MORE";
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  left: 0;
+  width: 100%;
+  line-height:50px;
+  text-transform: capitalize;
+  transition: all 400ms;
+}
+.abouts.read_more::before{
+  content: "READ MORE";
+  left: 190px;
+  background: linear-gradient(to right #df2771,#fb4c37);
+}
+.abouts a.read_more:hover::after{
+  left:-170px;
+  background: linear-gradient(to right #fb4c37, #df2771);
+}
+#volunteer:hover{
+  background-color: #fb4c37;
+}
+.abouts a{
+  display: flex;
+  overflow: hidden;
+  width: 100px;
+  height: 32px;
+  position: relative;
+  align-items: center;
+}
 .borders{
   height: 140vh;
   position: relative;
@@ -359,12 +399,12 @@ main{
 }
 @media (max-width: 768px) {
   .borders {
-    height: 80vh; /* Adjust height for smaller screens if needed */
+    height: 80vh; 
   }
 }
 @media (min-width: 769px) {
   .borders {
-    height: 140vh; /* Default height for larger screens */
+    height: 140vh; 
   }
 }
 .Years_Of_Excellence{
@@ -403,6 +443,9 @@ main{
 }
 .second{
   padding-left: 0px;
+ }
+ .animate__animated .animate__backInRight{
+  --animate-duration: 200s;
  }
 .Years_Of_Excellence_second{
   background-color: var(--color-primary);
@@ -449,6 +492,10 @@ main{
   align-items: center;
   margin-bottom: 30px;
 }
+.carousel-item img {
+  height: 500px; 
+  object-fit: cover; 
+}
 .text{
   display: flex;
   flex-direction: column;
@@ -468,18 +515,214 @@ main{
   text-align: center;
 }
 .text h1{
-  font-weight: 800;
-  font-size: 3.5rem;
+  font-weight: 600;
+  font-size: 4rem;
   margin-bottom: 20px;
   text-align: center;
+  font-family:"Whyte Inktrap", Sans-serif;
+  color: var(--color-secondary);
 }
 .texts{
   width: 70%;
 }
+.ticket_general{
+  display: flex;
+}
+.ticket{
+  border: 1px solid var(--color-primary);
+  height: fit-content;
+  color: white;
+  font-family: "Clash Display", Sans-serif;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 100px;
+  height: fit-content;
+}
+.first_ticket{
+  padding-bottom: 58px;
+}
+.ticket:hover{
+  box-shadow: 
+  -5px 5px 10px #2A1F50,  /* Left shadow */
+  5px 5px 10px #2A1F50,   /* Right shadow */
+  0px 10px 20px #2A1F50; 
+}
+.ticket h1, h2, h6{
+  font-weight: 700;
+}
+.ticket h1{
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.ticket h2{
+  color: var(--color-primary);
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family:"Whyte Inktrap", Sans-serif;
+  margin-bottom: 40px;
+}
+.ticket h6{
+  font-size: 20px;
+  font-weight: 700;
+}
+.ticket p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15px;
+  font-family: "Agrandir", Sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2.5em;
+}
+.ticket i{
+  font-weight: 900;
+}
+.ticket button{
+  background-color: transparent;
+  color: var(--color-60fea42d);
+  font-size: 21px;
+  font-weight: 500;
+  font-family: "Clash Display", Sans-serif;  
+  padding: 8px 40px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.ticket button:hover{
+  padding: 15px 40px;
+}
+footer{
+  height: fit-content;
+  background-image: linear-gradient(180deg, rgba(24, 10, 76, 0.9) 0%, rgb(5, 23, 54) 100%),url(/images/1.webp);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+.footer-col{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #B4B4B4;
+  font-family: var(--text-font-family);
+ font-weight: 600;
+ font-size: var(--text-font-size);
+ line-height: 1.5em;
+ padding-top: 200px;
+}
+.col_logo{
+  margin-bottom: 40px;
+}
+.icons_div{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.icons{
+  width: 40px;
+  border: 1px solid #B4B4B4;
+  border-radius: 50%;
+  padding: 10px;  
+}
+.footer-col h4{
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer-col_second{
+  text-align: center;
+  font-family: "Clash Display", Sans-serif;
+}
+.footer-col_second a{
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.8em;
+  font-size: 18px;
+}
+.footer-col_second a:hover{
+  color: #E73A82;
+}
+.footer-col_third{
+  text-align: center;
+  height: fit;
+}
+.footer-col_third button{
+  align-items: center;
+}
+.footer-col_third h4{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1em;
+  text-align: center;
+}
+.footer-col_third input {
+  width: 360px;
+  padding: 15px 25px;
+  margin: 0px 0px 10px 0px;
+  border-radius: 30px;
+  background-color: rgba(2, 1, 1, 0);
+  color: #666666;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid rgba(178, 178, 185, 0.23);
+  outline: none;
+}
+.footer-col_third button {
+  width: 360px;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #FF512F 0%, #DD2476 100%);
+  color: #FFFFFF;
+  padding: 20px 0;
+  margin: 10px 0 0 0;
+  border-radius: 30px;
+}
+.footer-col_third input:focus{
+  border: 1px solid #FF512F;
+  color: white;
+}
+.last_footer .row{
+  border-top: 1px solid var(--color-7e4e46cc);
+  height: fit-content;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  color: white;
+  position: relative;
+}
+.last_footer .row span{
+  text-align: center;
+  margin-top: 40px;
+  font-family: var(--text-font-family);
+  color: var(--color-7e4e46cc);
+  font-weight: var(--text-font-weight);
+}
+.last_footer .row span a{
+  color: white;
+  font-weight: bolder;
+}
+.last_footer .row span a:hover{
+  color: #08003C;
+}
+.top a{
+  border: 1px solid white;
+  width: 50px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  border-radius: 5px;
 
-
-
+}
+a .top_icon:hover{
+  color: #08003C;
+  border: 1px solid red;
+}
 
 /* Medium Devices */
 @media(max-width:991px){
@@ -531,6 +774,13 @@ main{
   .text h1{
     font-size: 2.5rem;
   }
+  .footer-col_third{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
  }
 /* Small Devices */
 @media(max-width:767px){
@@ -573,6 +823,12 @@ main{
     gap: 20px;
     text-align: center;
   }
+  .Exhibit_SMFest hr {
+    margin-top: 50px;
+  }
+  .text{
+    margin-top: 20px;
+  }
   .img{
   position: absolute; top: 30px; left: 30px;
   width: 40px;
@@ -586,6 +842,13 @@ main{
   }
    .about_smfest h1{
     font-size: 2rem;
+ }
+ .Exhibit{
+  padding-top: 100px;
+ }
+ .Exhibit h1{
+  font-size: 4rem;
+  line-height: 3rem;
  }
  .second{
   margin-top: -100px;
@@ -617,6 +880,29 @@ main{
   width: 100%;
   padding-bottom: 20px;
 }
+.ticket{
+  margin-bottom:0;
+}
+.ticket_general{
+padding-bottom: 100px;
+}
+footer{
+  border-top: 1px solid var(--color-60fea42d);
+}
+.footer-col{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 30px;
+}
+.footer-col_third{
+  width: 100%;
+}
+.footer-col_third{
+  width: 100%;  
+}
+
 }
  /* Extra Small Devices */
 @media(max-width:575px){
@@ -624,5 +910,39 @@ main{
   height: fit-content;
   padding-bottom: 50px;
  }
+ .borders{
+  height: 140vh;
+  position: relative;
+  border: 4px solid #EE2F5B; 
+  border-radius: 10px;
+  height: 70vh;
+  width: 100%;
+}
+.about_bg{
+  background-image: url(/images/about-smfest-2webp.webp);
+  height: 90%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  min-height: 90%;
+  min-width: 90%;
+}
+.Years_Of_Excellence{
+  bottom: -80px;
+  right: -20px;
+}
+.about_smfest{
+  padding-bottom:  70px;
+  padding-top: 20px;
+ }
+ hr{
+  display: block;
+ }
+
  }
  
+

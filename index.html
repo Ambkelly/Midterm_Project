@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="/css/style.css">
 </head> 
 <body>
-  <header>
+  <header id="header">
     <!-- Navbar Section -->
 <nav id="nav">
   <div class="heloo">
     <nav class="navbar navbar-expand-lg">
-      <div class="container">
+      <div class="container-fluid ps-lg-5">
         <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="" width="80px" style="margin-right: 200px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
           <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12 hero">
           <p class="anticipate">ANTICIPATE</p>
@@ -108,6 +108,7 @@
           <p>Volunteers</p>
         </div>
       </div>
+      <hr style="border: 1px solid white;">
     </section>
     <section class="containers about_smfest_section">
       <div class="row about_smfest">
@@ -117,18 +118,16 @@
           <p>It is a platform that teaches its audience how to leverage the power of technology, social media, and innovation to advance their businesses, brands, and causes, by providing ideas, exposure, and insights that help people and businesses understand how to explore all the advantages of digitalization.</p>
 
           <p>p>In this 2024 edition, business owners, marketers,  and idea boomers will learn how to unlock the full promise of digital opportunity to drive the future of the industry, bring narrative and customer engagement to new realms, and scale business/idea results.</p>
-          <button>
-            READ MORE
-          </button>
+          <button class="abouts"><a href="" class="read_more"></a></button>
        </div>
         <div class="about second">
-          <div class="borders animate__backInRight">
+          <div class="borders animate__animated animate__backInRight">
             <div class="about_bg">
               <!-- <img src="./images/about-smfest-2webp.webp" alt="" width="100%"> -->
             </div>
             <div class="Years_Of_Excellence">
               <div>
-                <h1>4</h1>
+                <h1 class="count">4</h1>
                 <h5 style="color:#EE2F5B; font-weight: bold;">TH</h5>
               </div>
               <h5 style="margin-top: -10px;">Years Of Excellence</h5>
@@ -136,16 +135,17 @@
           </div>
         </div>
       </div>
+      <hr style="border: 1px solid white;">
     </section>
     <section class="containers about_smfest_section about_smfest_section_second" >
       <div class="row about_smfest">
         <div class="about second">
-          <div class="borders">
+          <div class="borders  animate__animated animate__backInRight">
             <div class="about_bg second_about_bg">
             </div>
             <div class="Years_Of_Excellence Years_Of_Excellence_second">
               <div>
-                <h1>50</h1>
+                <h1 class="count">50</h1>
                 <h5>+</h5>
               </div>
               <h5 style="margin-top: -10px;">Global Sponsors</h5>
@@ -202,11 +202,10 @@
               </div>
             </div>
           </div>
-          <button>
-            SPONSOR
-          </button>
+          <button class="abouts"><a href="" class="read_more"></a></button>
        </div>
       </div>
+      <hr style="border: 1px solid white;">
     </section>
 
     <section class="containers about_smfest_section" style="margin-top: 100px;">
@@ -219,23 +218,24 @@
           </p>
 
           <p>Join us and be a part of an event that will inspire, educate, and shape the future of technology. Together, let’s make this an unforgettable experience for all attendees.</p>
-          <button>
+          <button id="volunteer">
             VOLUNTEER
           </button>
        </div>
         <div class="about second">
-          <div class="borders animate__backInRight">
+          <div class="borders  animate__animated animate__backInRight">
             <div class="about_bg">
             </div>
             <div class="Years_Of_Excellence">
               <div>
-                <h1>200</h1>
+                <h1 class="count">200</h1>
               </div>
               <h5 style="margin-top: -10px;">Volunteers</h5>
             </div>
           </div>
         </div>
       </div>
+      <hr style="border: 1px solid white;">
     </section>   
 
     <section class="Exhibit_SMFest containers">
@@ -247,17 +247,26 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./images/01.webp" class="d-block w-100" alt="...">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <img src="./images/01.webp" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="./images/02.webp" class="d-block w-100 img-fluid" alt="...">
+                </div>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="./images/02.webp" class="d-block w-100" alt="...">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <img src="./images/03.webp" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                  <img src="./images/04.webp" class="d-block w-100 img-fluid" alt="...">
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="./images/03.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/04.webp" class="d-block w-100" alt="...">
-            </div>
+            <!-- Add more slides as needed -->
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #f3043c; border-radius: 50%;"></span>
@@ -268,8 +277,10 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        
         </div>
       </div>
+      <hr style="border: 1px solid white;">
     </section>
     
     <section class="containers">
@@ -282,42 +293,149 @@
       </div>
     </section>
 
-    <section class="Exhibit_SMFest containers">
-      <div class="row">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./images/speakers-arrange3-scaled.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./images/speakers-arrange4-1-scaled.webp" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #f3043c; border-radius: 50%;"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #f3043c; border-radius: 50%;"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    <section class="Exhibit_SMFest container-fluid">
+  <div class="row">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/speakers-arrange3-scaled.webp" class="d-block w-100 img-fluid" alt="...">
         </div>
+        <div class="carousel-item">
+          <img src="./images/speakers-arrange4-1-scaled.webp" class="d-block w-100 img-fluid" alt="...">
         </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #f3043c; border-radius: 50%;"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #f3043c; border-radius: 50%;"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <hr style="border: 1px solid white;">
+</section>
 
     <section class="containers">
       <div class="row">
-        <div class="col-12 text texts">
+        <div class="col-12 text texts" >
           <h3>TICKET CATEGORIES</h3>
           <h1>Get your Ticket</h1>
           <p>At this moment the ticket will be sold at 25% discount for all category, Please, secure your tickets now before the offer ends. Offer Ends August 1st.</p>
         </div>
       </div>
     </section>
-  </main>
 
-  
+    <section class="containers">
+      <div class="row ticket_general">
+        <div class="col-md col-sm-12 ticket first_ticket">
+          <h1>BASIC</h1>
+          <h6 style="text-decoration:line-through;">#15,000</h6>
+          <h2>10,000</h2>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Certificate</p>
+          <p><i class="bi bi-check-lg fs-2" style="color:#EE2F5B;"></i>Refreshment</p>
+          <p><i class="bi bi-check-lg fs-2" style="color:#EE2F5B;"></i>Jotter & Pen</p>
+          <p><i class="bi bi-check-lg fs-2" style="color:#EE2F5B;"></i>Networking Opportunities</p>
+          <p><i class="bi bi-check-lg fs-2" style="color:#EE2F5B;"></i>Access to Vendors</p>
+          <p><i class="bi bi-x fs-2" style="color:#EE2F5B;"></i>Informal Nibbles</p>
+          <p><i class="bi bi-x fs-2" style="color:#EE2F5B;"></i>Executive Notepads</p>
+          <p><i class="bi bi-x fs-2" style="color:#EE2F5B;"></i>Network with Speakers</p>
+          <button>Buy Ticket</button>
+        </div>
+        <div class="col-md col-sm-12 ticket">
+          <h1>EXECUTIVE</h1>
+          <h6 style="text-decoration:line-through;">#30,000</h6>
+          <h2>20,000</h2>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Access to Event</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Refreshment</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Jotter & Pen</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Networking Opportunities</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Access to Vendors</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Certificate</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Front Row Seating Position</p>
+          <p><i class="bi bi-x fs-2 text-light"></i>Executive Services</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Informal Nibbles</p>
+          <button>Buy Ticket</button>
+        </div>
+        <div class="col-md col-sm-12 ticket">
+          <h1>PREMIUM</h1>
+          <h6 style="text-decoration:line-through;">#100,000</h6>
+          <h2>70,000</h2>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Access to Executive MasterClass</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Refreshment Plus</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>IEC Materials</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Executive Service</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Informal Nibbles</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Access to Event</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Front Row Seating Position</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Executive Refreshment</p>
+          <p><i class="bi bi-check-lg text-light fs-3"></i>Certificate</p>
+          <button>Buy Ticket</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="containers footer_section">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-12 footer-col">
+          <img src="./images/thanks-banner-1.png" alt="" width="150px" class="col_logo">
+          <p>
+            SMFest is a global, annual conference that brings the best and brightest minds in the world together.
+          </p>
+          <div class="icons_div">
+            <img src="./images/facebook_icon.png" alt="" class="icons">
+            <img src="./images/instagram.png" alt="" class="icons">
+            <img src="./images/mail.png" alt="" class="icons">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 footer-col footer-col_second">
+          <h4>Other Pages</h4>
+          <a href="#">About US</a>
+          <a href="#">Blog</a>
+          <a href="#">Ticket</a>
+          <a href="#">Speakers</a>
+          <a href="#">Gallery</a>
+          <a href="#">Shop</a>
+          <a href="#">Contact</a>
+          <a href="#">Volunteer</a>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 footer-col footer-col_third ms-auto" style="padding-left: 50px;">
+          <div>
+            <h4>Newsletter</h4>
+          <p>Don’t miss a thing! Sign up to receive weekly news.</p>
+          </div>
+          <div class="col-12">
+            <input type="text" placeholder="Enter Email Address" required class="w-100">
+          </div>
+          <div class="col-12">
+            <input type="text" placeholder="First Name" required class="w-100">
+          </div>
+          <div class="col-12">
+            <input type="text" placeholder="Last Name" required class="w-100">
+          </div>
+          <div class="col-12">
+            <button class="w-100">
+              SUBSCRIBE
+            </button></div>            
+        </div>
+        </div>
+      </div>
+    </div>
+    <section class="containers last_footer">
+      <div class="row">
+        <span>
+          &copy; 2024
+          <a href="#"> Silicon Africa.</a>
+          All rights reserved.
+        </span>
+        <div class="top">
+          <a href="#header"><img id="top_icon" src="./images/arrow.png" alt="" width="20px"></a>
+        </div>
+      </div>
+    </section>
+  </footer>
   <script>
             // Get all the elements with the class 'count'
     const counters = document.querySelectorAll('.count');
@@ -384,10 +502,6 @@
         counters.forEach(animateCount);
 
   </script>
-
-
-
-
   <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
