@@ -879,6 +879,10 @@ a .top_icon:hover{
     gap: 20px;
     text-align: center;
   }
+  .Exhibit_SMFest .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
   .Exhibit_SMFest hr {
     margin-top: 50px;
   }
