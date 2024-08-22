@@ -97,8 +97,11 @@ ol, ul{
 }
 .nav-link{
   font-family: var(--text-font-family);
-  font-weight: var(--text-font-weight);
+  font-weight: 800;
   color: var(--color-text);
+}
+.nav-link:hover{
+  color: #F35042;
 }
 .btns{
   color: white;
@@ -110,6 +113,11 @@ ol, ul{
 .btn:hover {
   background: linear-gradient(to right, #E02870, #FD4E33);
   color: white;
+}
+@media(max-width:1062px){
+  .nav_btn img{
+    display: none;
+  }
 }
 .btns a.text-completed::after,.text-completed::before{
   content: "SPONSOR";
@@ -357,7 +365,7 @@ main{
  }
  .boxes p{
   font-family: var(--text-font-family);
-  font-weight: var(--text-font-weight);
+  font-weight: 800;
   font-size: 1.2rem;
   letter-spacing: 2px;
   text-align: center;
@@ -378,8 +386,7 @@ main{
  }
  .about{
   width: 50%;
-  height: fit-content;
- 
+  height: fit-content; 
  }
  .first{
   padding-right: 65px;
@@ -398,10 +405,10 @@ main{
   margin-bottom: 20px;
  }
  .about_smfest p{
-  font-size: 14.5px;
+  font-size: 16px;
   letter-spacing: 1px;
  font-family: var(--text-font-family);
-  font-weight: var(--text-font-weight);
+  font-weight:800;
  line-height: 22px;
  }
  .about button{
@@ -596,6 +603,11 @@ main{
 .texts{
   width: 70%;
 }
+.text p{
+  font-weight: 800;
+  font-size: 16px;
+  font-family:"Agrandir", Sans-serif;
+}
 .ticket_general{
   display: flex;
 }
@@ -611,7 +623,7 @@ main{
   height: fit-content;
 }
 .first_ticket{
-  padding-bottom: 58px;
+  padding-bottom: 60px;
 }
 .ticket:hover{
   box-shadow: 
@@ -645,7 +657,8 @@ main{
   justify-content: center;
   margin-top: -15px;
   font-family: "Agrandir", Sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 800;
   font-weight: normal;
   line-height: 2.5em;
 }
@@ -938,6 +951,9 @@ footer{
   .text{
     margin-top: 20px;
   }
+  .text p{
+    font-weight: var(--text-font-weight);
+  }
   .img{
   position: absolute; top: 30px; left: 30px;
   width: 40px;
@@ -964,6 +980,9 @@ footer{
  }
  .second h1{
   letter-spacing: 3px;
+ }
+ .about_smfest p{
+  font-weight:var(--text-font-weight);
  }
  .Years_Of_Excellence_second{
   background-color: var(--color-primary);
