@@ -627,9 +627,9 @@ main{
 }
 .ticket:hover{
   box-shadow: 
-  -5px 5px 10px #2A1F50,  /* Left shadow */
-  5px 5px 10px #2A1F50,   /* Right shadow */
-  0px 10px 20px #2A1F50; 
+  -5px 10px 15px #2A1F50,  /* Left shadow */
+  10px 10px 15px #2A1F50,   /* Right shadow */
+  0px 15px 20px #2A1F50; 
 }
 .ticket h1, h2, h6{
   font-weight: 700;
