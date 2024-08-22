@@ -23,6 +23,10 @@ body {
   font-family:"Whyte Inktrap";
   src: url(/fonts/font/WhyteInktrap-Black.woff);
 }
+@font-face {
+  font-family:"Oswald";
+  src: url(/fonts/Oswald/OFL.txt);
+}
 :root{
   --color-primary: #EE2F5B;
   --color-secondary: #F4F4F4;
@@ -262,6 +266,46 @@ ol, ul{
 }
 .display_small_device{
   display: none;
+}
+#search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #160A1D; 
+  z-index: 1000; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+#search-input-container {
+  width: 80%;
+  max-width: 600px;
+  text-align: center; 
+}
+#search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #2E2334; 
+  outline: none;
+  font-family: "Oswald", Sans-serif; 
+  font-size: 30px; 
+  font-weight: normal; 
+  color: #4F092A;
+  background-color: transparent;
+  text-align: center;
+}
+#remove-search {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
 main{
   background-color: #08003C;
@@ -751,10 +795,10 @@ footer{
 .last_footer .row span a:hover{
   color: #08003C;
 }
-.top a{
+.top a {
   border: 1px solid white;
-  width: 50px;
-  height: 55px;
+  width: 45px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -763,11 +807,16 @@ footer{
   right: 30px;
   border-radius: 5px;
   z-index: 100;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
 }
-a .top_icon:hover{
+.top a.visible {
+  opacity: 1; 
+}
+.top a .top_icon:hover {
   color: #08003C;
-  border: 1px solid red;
 }
+
 /* Medium Devices */
 @media(max-width:991px){
   .containers{
